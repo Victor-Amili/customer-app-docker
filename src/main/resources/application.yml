@@ -1,0 +1,22 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: customer-docker=application
+
+order:
+  service:
+    url: http://localhost:8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/customerdb?createDatabaseIfNotExist=true
+#    username: root
+#    password:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
